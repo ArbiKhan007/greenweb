@@ -1,0 +1,25 @@
+{
+  "name": "greenweb",
+  "version": "1.0.0",
+  "description": "greenweb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArbiKhan007/greenweb.git"
+  },
+  "keywords": [
+    "green",
+    "blue",
+    "web",
+    "ninja"
+  ],
+  "author": "king",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArbiKhan007/greenweb/issues"
+  },
+  "homepage": "https://github.com/ArbiKhan007/greenweb#readme"
+}
