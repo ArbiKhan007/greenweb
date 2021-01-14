@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 2rem 1rem; background-color: #f0f2f5;">
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        Books for Computer Science
+    </h1>
+
+    <form style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 1rem;" action = "http://localhost:3000/search" method = "GET">
+        <Label>Search by id</Label>
+        <input type="search" name="search">
+        <input type="submit"> 
+     </form>
+
+     <form style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 1rem;" action = "http://localhost:3000/category" method = "POST">
+        <Label>Search by category</Label>
+        <input type="search" name="category">
+        <input type="submit"> 
+     </form>
+
+     <div style="font-size: 1.2rem;">
+        <h3>Search Categories:</h3>
+        <p style="font-size: 1.2rem;">Mobile Technology,Next Generation Databases,Java,Software Engineering,Internet,Web Development,XML,Networking,Microsoft .NET</p>
+        <p>Python,PHP,Client-Server,Software Development,Business,Programming,PowerBuilder,Microsoft,Computer Graphics,Perl</p>
+     </div>
+
+
+     <div>
+         <h3>Search by year:</h3>
+     </div>
+     <form action="http://localhost:3000/year" method="POST">
+        <h3 id="demo"></h3>
+        <input type="range" min="1990" max="2015" value = "2010" class="slider" id="rangetool" name = "year">
+        <input type="submit">  
+    </form>
+    
+    <script src="static/template.js"></script>
+    <script src="static/slider.js"></script>
+</body>
+</html>

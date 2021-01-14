@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <!-- <meta> tags> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Book Face</title>
+</head>
+
+<body>
+    <div style="background-color: #f0f2f5; margin: 2rem; font-family: 'Cambria', 'Cochin','Times New Roman', serif;" class="book_details">
+        <h3>Book ID {{_id}}</h3>
+        <h1 style="font-weight: 600;">{{title}}</h3>
+        <h4>ISBN {{isbn}}</h4>
+        <h3>Page Count {{pageCount}}</h3>
+        <h3>Published Date {{publishedDate.$date}}</h3>
+        <a href="{{thumbnailUrl}}">Link for Amazon</a>
+        <p style="line-height: 1.25rem;">{{shortDescription}}</p>
+        <p style="line-height: 1.25rem;">{{longDescription}}</p>
+        <h3>Status {{status}}ED</h3>
+        <h3>Authors
+            <ul>
+                <li>{{authors}}</li>
+            </ul>
+        </h3>
+        <h3>Categories {{categories}}</h3>
+     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
